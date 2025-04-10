@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body {
+    background-color: black;
+}
+
+header {
+background-color: rgb(10, 34, 44);
+padding-bottom: 44px;
+
+
+
+}
+h1 {
+    color: white;
+    left: 50px;
+    top: 40px;
+}
+
+h2 {
+    color: white;
+   
+    
+}
+
+h3 {
+    color: white;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+section {
+    top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
