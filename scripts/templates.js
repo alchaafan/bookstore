@@ -8,26 +8,15 @@ function getBooksTemplates(i) {
                                              <p>${books[i].likes}</p>
                                              <p>${books[i].liked}</p>
                                              <p>${books[i].price}</p>
-                                             <p>${books[i].publishedYear}</p>
-                                            
-                                             
+                                             <p>${books[i].publishedYear}</p>    
+                                             <div id="commentsContainer${i}"><p></p></div>
                                          </div>
              
              
                                       `
-}
-
-function getCommentsTemplates(c) {
-
-    return `
-                                            
-                                        <div id="commentsContaine">
-                                                    <p>${books[i].comments[c].name}</p>
-                                                    <p>${books[i].comments[c].comment}</p>
-
-                                                </div>
-                                                
-    
-    `
 
 }
+
+
+
+

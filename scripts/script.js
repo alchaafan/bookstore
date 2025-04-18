@@ -176,15 +176,18 @@ let books = [
 
   function init() {
     let contentRef = document.getElementById('content');
-    contentRef.innerHTML = "";
          for(let i = 0; i < books.length; i++) {
              contentRef.innerHTML += getBooksTemplates(i);
+             getCommentsTemplates(i);
      }
  }
 
-let commentsRef = document.getElementById('commentsContainer');
-for (let c = 0; c < books[i].comments.length; c++) {
-  commentsRef.innerHTML += getCommentsTemplates(c);
-}
+
 
  
+function getCommentsTemplates(i) {
+  let commentsRef = document.getElementById(`commentsContainer${i}`);
+  for (let c = 0; c < books[i].comments.length; c++) {
+    commentsRef.innerHTML += `<p>Name: ${books[i].comments[c].name}</p><p>Kommentare: ${books[i].comments[c].comment}</p>`;
+  }
+}
