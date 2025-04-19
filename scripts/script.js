@@ -197,6 +197,6 @@ let books = [
 function getCommentsTemplates(i) {
   let commentsRef = document.getElementById(`commentsContainer${i}`);
   for (let c = 0; c < books[i].comments.length; c++) {
-    commentsRef.innerHTML += `<p id="commentID">${books[i].comments[c].name +": "}   ${books[i].comments[c].comment}</p>`;
+    commentsRef.innerHTML += `<p id="commentID">${books[i].comments[c].name +": <br> "}   ${books[i].comments[c].comment}</p>`;
   }
 }

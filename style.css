@@ -62,19 +62,28 @@ header {
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-    
 }
 
-#commentsContainer{
-    overflow-y: scroll;
-    
-}
+
+
 #commentID {
     border: 1px solid black;
     margin-bottom: 15px;
     color: rgb(114, 94, 63);
+    background-color: rgba(243, 250, 250, 0.733);
    
 }
+#commentsContainer {
+    display: flex;
+
+}
+input {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   border-radius: 15px;
+   
+}
+
 
 
 
