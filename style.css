@@ -78,11 +78,23 @@ header {
 
 }
 input {
+    width: 350px;
+    height: 35px;
    margin-top: 15px;
    margin-bottom: 15px;
-   border-radius: 15px;
+   border-radius: 15px; 
+   text-align: center;
+   opacity: 0.5;
    
 }
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
 
 
 
