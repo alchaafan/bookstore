@@ -10,7 +10,7 @@ function getBooksTemplates(i) {
                                                 <p>${books[i].liked}</p>
                                                 <p>${books[i].price}</p>
                                                 <p>Erscheinungsjahr: ${books[i].publishedYear}</p>    
-                                                <div id="commentsContainer${i}"></div>
+                                                <div id="commentsContainer${i}"><p></p></div>
                                              </div>
              
              

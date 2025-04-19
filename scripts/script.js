@@ -7,7 +7,7 @@ let books = [
       "price": 19.99,
       "publishedYear": 2018,
       "genre": "Fantasy",
-      "bild": `<img src="./img/geheimnisse.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/geheimnisse.jpg" alt="">`,
       "comments": [
         {
           "name": "Leser123",
@@ -39,7 +39,7 @@ let books = [
       "price": 14.50,
       "publishedYear": 2021,
       "genre": "Fantasy",
-      "bild": `<img src="./img/vergessene.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/vergessene.jpg" alt="">`,
       "comments": []
     },
     {
@@ -50,7 +50,7 @@ let books = [
       "price": 22.95,
       "publishedYear": 2019,
       "genre": "Romantik",
-      "bild": `<img src="./img/himmel.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/himmel.jpg" alt="">`,
       "comments": [
         {
           "name": "LeserPeter",
@@ -82,7 +82,7 @@ let books = [
       "price": 18.00,
       "publishedYear": 2020,
       "genre": "Science-Fiction",
-      "bild": `<img src="./img/rätsel.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/rätsel.jpg" alt="">`,
       "comments": [
         {
           "name": "BuchKenner",
@@ -102,7 +102,7 @@ let books = [
       "price": 16.75,
       "publishedYear": 2017,
       "genre": "Fantasy",
-      "bild": `<img src="./img/wächter.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/wächter.jpg" alt="">`,
       "comments": []
     },
     {
@@ -113,7 +113,7 @@ let books = [
       "price": 12.30,
       "publishedYear": 2022,
       "genre": "Science-Fiction",
-      "bild": `<img src="./img/schatten.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/schatten.jpg" alt="">`,
       "comments": [
         {
           "name": "BücherLiebhaber",
@@ -133,7 +133,7 @@ let books = [
       "price": 21.00,
       "publishedYear": 2015,
       "genre": "Science-Fiction",
-      "bild": `<img src="./img/jenseits.jpg" alt="">`,
+      "bild": `<img class="bookImg" src="./img/jenseits.jpg" alt="">`,
       "comments": [
         {
           "name": "Leser123",
@@ -149,7 +149,7 @@ let books = [
       "price": 17.50,
       "publishedYear": 2020,
       "genre": "Fantasy",
-      "bild": `<img src="./img/verborgene.jpg" alt="">`,
+      "bild": `<img  class="bookImg"src="./img/verborgene.jpg" alt="">`,
       "comments": [
         {
           "name": "Bookworm92",
@@ -165,7 +165,7 @@ let books = [
       "price": 19.99,
       "publishedYear": 2016,
       "genre": "Romantik",
-      "bild": `<img src="./img/liebe.jpg" alt="">`,
+      "bild": `<img  class="bookImg"src="./img/liebe.jpg" alt="">`,
       "comments": [
         {
           "name": "Bibliophile23",
@@ -197,6 +197,6 @@ let books = [
 function getCommentsTemplates(i) {
   let commentsRef = document.getElementById(`commentsContainer${i}`);
   for (let c = 0; c < books[i].comments.length; c++) {
-    commentsRef.innerHTML += `<p>${books[i].comments[c].name} kommentiert: </p><p id="commentID"> ${books[i].comments[c].comment}</p>`;
+    commentsRef.innerHTML += `<p id="commentID">${books[i].comments[c].name +": "}   ${books[i].comments[c].comment}</p>`;
   }
 }

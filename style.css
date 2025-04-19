@@ -24,13 +24,13 @@ h2 {
 header {
     display: flex;
     justify-content: center;
-    background-color: rgb(229, 220, 252);
+    background-color: rgb(238, 235, 245);
     padding: 30px;
 }
 
 .bookImg {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
 }
 
 
@@ -71,8 +71,8 @@ header {
 }
 #commentID {
     border: 1px solid black;
-    margin-top: 15px;
     margin-bottom: 15px;
+    color: rgb(114, 94, 63);
    
 }
 
