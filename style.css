@@ -12,7 +12,7 @@ body {
   
 }
 h2 {
-    font-size: 30px;
+    font-size: 20px;
     border: 1px solid #84916a;
     background-color: rgba(248, 245, 241, 0.418);
     border-radius: 5px;
@@ -26,7 +26,6 @@ header {
             color: white;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -94,7 +93,7 @@ header {
     display: flex;
 
 }
-input {
+#inputID {
     width: 350px;
     height: 35px;
    margin-top: 15px;
@@ -110,6 +109,12 @@ button {
     cursor: pointer;
     background-color: transparent;
     border: none;
+}
+
+.fav {
+    width: 30px;
+    height: 30px;
+    gap: 25px;
 }
 
 

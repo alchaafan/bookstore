@@ -200,3 +200,14 @@ function getCommentsTemplates(i) {
     commentsRef.innerHTML += `<p id="commentID">${books[i].comments[c].name +": <br> "}   ${books[i].comments[c].comment}</p>`;
   }
 }
+
+function renderFav(i) {
+  let favRef = books[i];
+
+  if (favRef.liked ==true) {
+    return `<img class="fav" src="./img/fav.png" alt="">`
+  } else {
+    return ` <img class="fav" src="./img/adfav.png" alt="">`
+  }
+}
+renderFav(i);
