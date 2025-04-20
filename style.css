@@ -3,15 +3,14 @@
     margin: 0px;
     box-sizing: border-box;
     position: relative;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     
 }
-/* body {
+body {
    
   
-  
-} */
+}
 h2 {
     font-size: 30px;
     border: 1px solid #84916a;
@@ -20,12 +19,15 @@ h2 {
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 15px;
+    
 }
 header {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(238, 235, 245);
-    padding: 30px;
+    background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 .bookImg {
@@ -62,15 +64,30 @@ header {
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+
 }
 
 
 
 #commentID {
-    border: 1px solid black;
-    margin-bottom: 15px;
-    color: rgb(114, 94, 63);
-    background-color: rgba(243, 250, 250, 0.733);
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+
+
+   
+}
+#commentID:hover {
+    background-color: #d1e7ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+
+  
+   
    
 }
 #commentsContainer {
