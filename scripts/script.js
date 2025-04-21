@@ -217,6 +217,6 @@ function addComment(i) {
   books[i].comments.push({comment: commentInput});
 
   let commentsContainer = document.getElementById(`commentsContainer${i}`)
-  commentsContainer.innerHTML += `<p>${commentInput}</p>`;
+  commentsContainer.innerHTML += `<p> Leser: ${commentInput}</p>`;
   addCommentRef.value = "";
 }
