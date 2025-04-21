@@ -210,4 +210,13 @@ function renderFav(i) {
     return ` <img class="fav" src="./img/adfav.png" alt="">`
   }
 }
-renderFav(i);
+
+function addComment(i) {
+  let addCommentRef = document.getElementById(`commentInput${i}`);
+  let commentInput = addCommentRef.value;
+  books[i].comments.push({comment: commentInput});
+
+  let commentsContainer = document.getElementById(`commentsContainer${i}`)
+  commentsContainer.innerHTML += `<p>${commentInput}</p>`;
+  addCommentRef.value = "";
+}
