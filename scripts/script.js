@@ -205,10 +205,28 @@ function renderFav(i) {
   let favRef = books[i];
 
   if (favRef.liked ==true) {
-    return `<img class="fav" src="./img/fav.png" alt="">`
+    return `<img  class="fav" src="./img/fav.png" onclick="addToFav(${i})" alt="">`
   } else {
-    return ` <img class="fav" src="./img/adfav.png" alt="">`
+    return ` <img class="fav" src="./img/adfav.png" onclick="addToFav(${i})" alt="">`
   }
+}
+
+function updateFavDisplay(i) {
+  const likesContainer = document.getElementById(`likes${i}`);
+      likesContainer.innerHTML = `<p>${books[i].likes} ${renderFav(i)}</p>`
+}
+
+function addToFav(i) {
+  let addToFAvRef = books[i];
+  if (addToFAvRef.liked == true) {
+    books[i].liked = false;
+    books[i].likes -= 1;
+  } else {
+    books[i].liked = true;
+    books[i]. likes += 1;
+  }
+  updateFavDisplay(i)
+
 }
 
 function addComment(i) {
