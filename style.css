@@ -105,6 +105,12 @@ header {
     font-family: 'Roboto', sans-serif;
 
 }
+
+#pComment:hover {
+    background-color: #d1e7ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); 
+}
 #inputID {
     width: 350px;
     height: 35px;

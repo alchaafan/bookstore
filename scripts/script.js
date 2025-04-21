@@ -192,14 +192,13 @@ let books = [
  }
 
 
-
- 
 function getCommentsTemplates(i) {
   let commentsRef = document.getElementById(`commentsContainer${i}`);
   for (let c = 0; c < books[i].comments.length; c++) {
     commentsRef.innerHTML += `<p id="commentID">${books[i].comments[c].name +": <br> "}   ${books[i].comments[c].comment}</p>`;
   }
 }
+
 
 function renderFav(i) {
   let favRef = books[i];
@@ -211,10 +210,12 @@ function renderFav(i) {
   }
 }
 
+
 function updateFavDisplay(i) {
   const likesContainer = document.getElementById(`likes${i}`);
       likesContainer.innerHTML = `<p>${books[i].likes} ${renderFav(i)}</p>`
 }
+
 
 function addToFav(i) {
   let addToFAvRef = books[i];
@@ -225,9 +226,12 @@ function addToFav(i) {
     books[i].liked = true;
     books[i]. likes += 1;
   }
+
+
   updateFavDisplay(i)
 
 }
+
 
 function addComment(i) {
   let addCommentRef = document.getElementById(`commentInput${i}`);
