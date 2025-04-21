@@ -83,14 +83,26 @@ header {
 #commentID:hover {
     background-color: #d1e7ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-
-  
-   
-   
+    transform: scale(1.02);  
 }
 #commentsContainer {
-    display: flex;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+
+}
+#pComment {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 
 }
 #inputID {
@@ -103,6 +115,8 @@ header {
    opacity: 0.5;
    
 }
+
+
 
 #sendBtn {
     padding: 10px;
