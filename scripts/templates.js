@@ -10,7 +10,7 @@ function getBooksTemplates(i) {
                                                             <p>Preis: ${books[i].price} €</p>
                                             <p>Erscheinungsjahr: ${books[i].publishedYear}</p>  
                                          <div id="commentsContainer${i}"> <input id="commentInput${i}"
-                                            type="text" placeholder="dein Kommentar"> 
+                                            type="text"required placeholder="dein Kommentar"> 
                                             <button onclick="addComment(${i})" id="sendBtn">&#10148;</button>  
                                               <p></p>
                                           </div>
