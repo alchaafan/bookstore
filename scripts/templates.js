@@ -11,8 +11,9 @@ function getBooksTemplates(i) {
                                             <p>Erscheinungsjahr: ${books[i].publishedYear}</p>  
                                          <div id="commentsContainer${i}"> <input id="commentInput${i}"
                                             type="text" placeholder="dein Kommentar"> 
-                                        <button onclick="addComment(${i})" id="sendBtn">&#10148;</button>                                                <p></p>
-                                    </div>
+                                            <button onclick="addComment(${i})" id="sendBtn">&#10148;</button>  
+                                              <p></p>
+                                          </div>
                                                 
 
                                  </div>

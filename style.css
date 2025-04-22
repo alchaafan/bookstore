@@ -63,6 +63,7 @@ header {
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+    height:900px;
 
 }
 
@@ -76,8 +77,6 @@ header {
     background-color: #f9f9f9;
     transition: all 0.3s ease;
     font-family: 'Roboto', sans-serif;
-
-
    
 }
 #commentID:hover {
@@ -106,6 +105,25 @@ header {
 
 }
 
+#commentsContainer1 {
+    right: 90px;
+}
+@media(max-width:500px) {
+    #commentsContainer1 {
+        right: auto;
+    }
+   
+}
+#commentsContainer4 {
+    right: 90px;
+}
+@media(max-width:500px) {
+    #commentsContainer4 {
+        right: auto;
+    }
+}
+
+
 #pComment:hover {
     background-color: #d1e7ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -119,16 +137,15 @@ header {
    border-radius: 15px; 
    text-align: center;
    opacity: 0.5;
-   
-}
-
-
+  
+   }
 
 #sendBtn {
     padding: 10px;
     cursor: pointer;
     background-color: transparent;
     border: none;
+   
 }
 
 .fav {
